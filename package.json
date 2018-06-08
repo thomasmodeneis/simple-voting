@@ -1,0 +1,20 @@
+{
+  "name": "simple-voting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "emulator": "node_modules/.bin/ganache-cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "^0.4.24",
+    "web3": "^0.20.6"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.1.0"
+  }
+}
