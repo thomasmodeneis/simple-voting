@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "emulator": "node_modules/.bin/ganache-cli"
+    "start": "concurrently \"node_modules/.bin/ganache-cli\" \"node_modules/.bin/nodemon server.js\""
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +14,8 @@
     "web3": "^0.20.6"
   },
   "devDependencies": {
-    "ganache-cli": "^6.1.0"
+    "concurrently": "^3.5.1",
+    "ganache-cli": "^6.1.0",
+    "nodemon": "^1.17.5"
   }
 }
